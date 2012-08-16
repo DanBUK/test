@@ -4,11 +4,14 @@
   "description": "An example NPM package.",
   "main": "index.js",
   "scripts": {
-    "test": "vows --spec"
+    "test": "./node_modules/vows/bin/vows test/* --spec"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/DanBUK/test.git"
+  },
+  "devDependencies": {
+    "vows": "*"
   },
   "author": "DanBUK <dan@f-box.org>",
   "license": "BSD"
