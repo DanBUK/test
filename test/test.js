@@ -16,4 +16,16 @@ suite.addBatch({
   }
 });
 
+suite.addBatch({
+  'string': {
+    'a equal a': {
+      topic: ['a', 'a'],
+      'a==a': function (topic) {
+        assert.equal(topic[0], topic[1]);
+      }
+    }
+  }
+});
+
+
 suite.export(module);
